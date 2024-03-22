@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--A dropdown menu to Select conversion type-->
+    <Spinner
+        android:id="@+id/spinnerConversionType"
+        android:layout_height="100dp"
+        android:layout_width="410dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--A dropdown menu to select the source unit-->
+
+    <Spinner
+        android:id="@+id/spinnerSourceUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="276dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!--A dropdown menu to select the destination unit-->
+    <Spinner
+        android:id="@+id/spinnerDestinationUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="404dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       />
+
+    <!--A text field to enter the value to be converted-->
+    <EditText
+        android:id="@+id/editTextValue"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="276dp"
+        android:hint="@string/value_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <!--A button to initiate the conversion-->
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:text="@string/convert_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--A text view to display the converted value-->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="404dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

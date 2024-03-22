@@ -1,0 +1,10 @@
+<resources>
+
+
+    <!-- ConvertValue -->
+    <string name="value_hint">Enter Value to Convert</string>
+    <!-- button -->
+    <string name="convert_button">Convert</string>
+    <!-- result -->
+    <string name="result_default">Converted Value Will Appear Here</string>
+</resources>
